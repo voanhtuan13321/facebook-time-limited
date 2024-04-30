@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Facebook Time Limited",
+  "description": "Extension for Facebook Time Limited",
+  "version": "1.0",
+  "action": {
+    "default_icon": "./images/logo.png"
+  },
+  "permissions": [
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "./scripts/content.js"
+      ],
+      "matches": [
+        "https://www.facebook.com/*"
+      ]
+    }
+  ]
+}
